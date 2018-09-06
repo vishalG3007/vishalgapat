@@ -1,0 +1,146 @@
+body{
+			/*background: #1BBC9B;*/
+			background: url(../images/bodybg1.jpg) no-repeat center center fixed;
+			opacity: 0.9;
+			padding-top:40px;
+		}
+/* fix padding under menu after resize */
+ @media screen and (max-width: 767px) {
+        body { padding-top: 80px; }
+    }
+    @media screen and (min-width:768px) and (max-width: 991px) {
+        body { padding-top: 60px; }
+    }
+    @media screen and (min-width: 992px) {
+        body { padding-top:55px; }
+    }   
+/*--------------------------------------------------------------------------------------*/
+		
+		.navbar-brand{
+			font-size: 25px;
+			font-family: 'Source Code Pro', monospace;
+		}
+		.nav-link{
+			color: #1BBC9B;
+			font-family: 'Source Code Pro', monospace;
+		}
+		.nav-link:hover{
+			color:white;
+			background:1em;
+			background-color:#1BBC9B;  
+		}
+		.navbar .navbar-toggler-icon { 
+    		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1BBC9B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+		}
+/*For Wrap Content------------------------------------------------------------------*/		
+		.wrap{
+			background:#E4F1FE;
+			box-shadow: 0 0 30px black;
+		}	
+		.side-wrap{
+        	background-color:#68C3A3;
+        	width:20%;
+        }
+        .side-wrap h2{
+        	font-size:18px;
+        	font-family: 'Source Code Pro', monospace;
+        }
+        .side-wrap h3{
+        	font-size: 14px;
+        }
+         .side-wrap h4{
+         	font-size: 15px;
+         }
+         .side-wrap h5{
+         	font-size: 14px;
+         }
+		.profile-box{
+			background-color: #1BBC9B;
+			padding: 20px;
+			border-left: 3px solid white;
+			border-right:3px solid white;
+			border-bottom:3px solid white;
+			border-bottom-left-radius: 150px;
+			border-bottom-right-radius: 150px;
+			box-shadow: 0px 2px 15px black;
+		}
+        .resumeimg{
+        	height: 150px;
+        	width: 150px;
+        	border-radius: 75px;
+        	box-shadow: 0 0 20px gray;
+        }
+        .profile-box h1{
+        	font-size: 30px;
+        }
+        .contact-box {
+        	padding: 20px;
+        }
+        .contact-box a{
+        	font-size:14px;
+        	color: black;
+        }
+        .education-box{
+        	padding: 20px;
+        }
+        .language-box{
+        	padding: 20px;
+        }
+        .interest-box{
+        	padding: 20px;
+        }
+        .main-wrap {
+        	padding-top:50px;
+        }
+        .section{
+        	padding-top:15px;
+        	padding-bottom:15px;
+        }
+        .main-wrap h2{
+        	font-size: 25px;
+        	letter-spacing: -1px;
+        	font-family: 'Source Code Pro', monospace;
+        }        
+        .academics table{
+        	width: 800%;
+        }
+/*for bottpm navbar----------------------------------------------------------------*/         
+         footer span:hover{
+        	color: #336E7B;
+        }
+        .myrow3{
+        	height: 50px;
+			background-color: #68C3A3;
+		}
+
+
+
+/*------------------------Loader-------------------------------------------------*/
+#overlay{
+    height: 100%;
+    width: 100%;
+	background:gray;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
+}
+.loader {
+    border: 5px solid purple; /* Light grey */
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

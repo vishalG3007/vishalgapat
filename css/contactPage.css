@@ -1,0 +1,105 @@
+body{
+    /*background: #1BBC9B;*/
+    background: url(../images/bodybg1.jpg) no-repeat center center fixed;
+    opacity: 0.9;
+    padding-top:40px;
+}
+/* fix padding under menu after resize */
+@media screen and (max-width: 767px) {
+body { padding-top: 80px; }
+}
+@media screen and (min-width:768px) and (max-width: 991px) {
+body { padding-top: 60px; }
+}
+@media screen and (min-width: 992px) {
+body { padding-top:55px; }
+}   
+/*--------------------------------------------------------------------------------------*/
+
+.navbar-brand{
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+.nav-link{
+    color: #1BBC9B;
+    font-family: 'Source Code Pro', monospace;
+}
+.nav-link:hover{
+    color:white;
+    background:1em;
+    background-color:#1BBC9B;  
+}
+.navbar .navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1BBC9B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+/*For Contact page------------------------------------------------------------------*/		
+section{
+    padding: 110px 0;
+    background: #16A085;
+    border: 10px solid lightgray;
+    border-radius: 600px;
+    z-index: +1;
+    box-shadow: 0px 0px 50px black;
+}
+.contacttitle{
+    font-family: 'Source Code Pro', monospace;
+}
+form label{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+}
+.form-group{
+    padding: 5px 0;
+}
+input[type="submit"]{
+    color: #A2DED0;
+    font-weight: bold;
+    background-color:#19886e7a;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 20px gray;
+}
+input[type="submit"]:hover{
+    background-color:#049372;
+   border: 1px solid lightgray;
+}
+/*for bottpm navbar----------------------------------------------------------------*/         
+ footer span:hover{
+    color: #336E7B;
+}
+.myrow3{
+    height: 50px;
+    background-color: #68C3A3;
+}
+
+
+
+
+/*------------------------Loader-------------------------------------------------*/
+#overlay{
+    height: 100%;
+    width: 100%;
+    background:gray;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
+}
+.loader {
+    border: 5px solid purple; /* Light grey */
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<link rel="shortcut icon" href="../images/fevicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/contactPage.css">
+	<title>Portfolio|Contact</title>
+</head>
+<body>
+	
+	<div class="container">
+		<nav class="navbar navbar-expand-lg fixed-top bg-light">											
+			<div class="container"> <!--This Container is to keep navbar fixed ar top but items within it are placed in container-->									
+					<a href="#" class="navbar-brand" style="color: #22313F">:&ltVishal_Gapat/></a>											
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--CHECK-->																
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="homepage.html" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="../html/homepage.html#aboutsection" class="nav-link">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="resume.html" class="nav-link">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a href="contactPage.html" class="nav-link">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link disabled">Feedback</a>
+							</li>
+						</ul>
+					</div>
+			</div> <!--Navbar container Closed-->	
+		</nav>
+		
+		<br>	
+
+            <div class="row align-self-center">
+                <div class="col-12 contactform">
+                    <section class="contact section">
+                            <h1 class="contacttitle text-white display-4 font-weight-bold text-center"><b>Contact:)</b></h1>
+                        <form action="contactform.php" method="POST"> 
+                            <div class="form-group row justify-content-center">
+                                <label class="col-2 text-white font-weight-bold" for="exampleFormControlSelect1"><b>Name:</b></label>
+                                <input type="text" name="name" class="col-6 form-control name" id="exampleFormControlInput1" placeholder="Your Name">  
+                            </div>                        
+                            <div class="form-group row justify-content-center">
+                            <label class="col-2 text-white font-weight-bold" for="exampleFormControlInput1"><b>Email:</b></label>
+							<input type="email" name="mail" class="col-6 form-control email" id="exampleFormControlInput2" placeholder="name@example.com">	
+							</div>
+							<p class="text-center" id="message"></p>
+                            <div class="form-group row justify-content-center">
+                            <label class="col-2 text-white font-weight-bold" for="exampleFormControlTextarea1"><b>Message:</b></label>
+                            <textarea class="col-6 form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="form-group row justify-content-center">
+                                    <input onclick="validate()" name="submit" type="submit" class=" col-8 btn btn-outline-success" id="exampleFormControlInput1" value="submit">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+		<br>
+
+		<div class="row myrow3">
+			<div class="col-sm-12">
+	 		<footer class="navbar navbar-expand-sm justify-content-between">
+	 		<ul class="navbar-nav">
+	 			<li class="nav-item">
+	 				<a class="nav-link" href="https://plus.google.com/u/0/100151956099425151123" target="_blank"><span class="fa fa-google-plus-square" style="font-size:24px; color:#22313F"></span> </a>
+	 			</li>
+	 			<li class="nav-item">
+	 				<a class="nav-link" href="https://www.linkedin.com/in/vishal-gapat-8b5594ab/" target="_blank"><span class="fa fa-linkedin-square" style="font-size:24px; color:#22313F"></span> </a>
+	 			</li>
+	 			<li class="nav-item">
+	 				<a class="nav-link" href="https://in.pinterest.com/vmgapat/" target="_blank"><span class="fa fa-pinterest-square" style="font-size:24px; color:#22313F"></span> </a>
+	 			</li>
+	 		</ul>
+	 			<p class="lead">
+	 				Design and Developed By:Vishal Gapat.
+	 			</p>
+	 	     </footer>
+	 		 </div>
+	 	 </div><!--Footer navbar-->
+		
+		
+		  <div id="overlay"><!--Loader-->
+			<div class="loader"></div>
+		</div>  
+	 </div>
+</body>
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/scroll.js"></script>
+<script>
+		$(document).ready(function(){
+			alert("Hey,bear with me, I'm still working on this..!");
+		});
+	</script>
+	<script src="../scripts/loader.js"></script>
+	<script src="../scripts/emailvalidate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</html>

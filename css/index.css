@@ -1,0 +1,107 @@
+body{
+    background-color: #4DAF7C;
+    background-image:url(../images/spiderweb.png);
+    background-size:50%;
+    background-repeat: no-repeat;
+}
+.logotitle{
+    font-family: 'Source Code Pro', monospace;
+    text-shadow:2px 3px 7px gray,
+                4px 6px 10px black;
+                margin-top:20%;
+}
+.welcomeNote{
+    padding: 5%;
+    font-family: 'Sacramento', cursive;
+}
+.ciclebtn a{
+    text-decoration: none;
+}
+.circle{
+	width: 100px;
+    line-height: 0;
+    padding: 50px 0;
+    margin: auto auto;
+	color:#34495E;
+    background-color: #3FC380;
+    border: 1px solid gray;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px black;
+	transition:background 1s, transform 0.5s ease-out; 
+}
+.circle:hover{
+    background-color:#66CC99;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 15px black;
+	transform:rotate(360deg);
+}
+
+.spider img{
+    z-index: +10;
+	height:12%;
+    width: 12%;
+    position: absolute;
+    top:89%;
+	left:-40px;
+    animation:move 15s linear infinite;
+    animation-timing-function:cubic-bezier(.17,.49,.75,.42);
+}
+
+@keyframes move{
+	from{transform: translatex(0px);}
+	to{transform: translatex(1500px);}
+}
+footer{
+    opacity: 0.1;
+}
+
+/*------------------------Loader-------------------------------------------------*/
+#overlay{
+    height: 100%;
+    width: 100%;
+    background:gray;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
+}
+.loader {
+    border: 5px solid purple; /* Light grey */
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/*-----------------------------setting particlejs to background--------------------------------------------*/
+/*html {
+    height: 100%
+}*/
+#one .canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+#one {
+    width: 100%;
+    height: 100%;
+    position: fixed;  
+    top: 0;
+    left: 0
+}

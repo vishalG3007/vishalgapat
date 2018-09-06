@@ -1,0 +1,138 @@
+body{
+			/*background: #1BBC9B;*/
+			background: url(../images/bodybg1.jpg) no-repeat center center fixed;
+			opacity: 0.9;
+			padding-top: 50px;
+		}
+/* fix padding under menu after resize */
+ @media screen and (max-width: 767px) {
+        body { padding-top: 80px; }
+    }
+    @media screen and (min-width:768px) and (max-width: 991px) {
+        body { padding-top: 60px; }
+    }
+    @media screen and (min-width: 992px) {
+        body { padding-top: 60px; }
+    }   
+/*--------------------------------------------------------------------------------------*/
+		.navbar-brand{
+			font-size: 25px;
+			font-family: 'Source Code Pro', monospace;
+		}
+		.nav-link{
+			color: #1BBC9B;
+			font-family: 'Source Code Pro', monospace;
+		}
+		.nav-link:hover{
+			color:white;
+			background:1em;
+			background-color:#1BBC9B;  
+		}
+		.jumbotron{
+			/*background: url(../images/jumbotronbg.jpg) center center;
+			background-repeat: no-repeat;
+			z-index: 10;*/
+			padding: 100px 0;
+			background: none;
+			color: white;
+			box-shadow: 0 0 40px black;
+		}
+		.jumbotron h1{
+			text-shadow:3px 3px 3px black;
+		}
+		/*.btn-outline-primary{
+			border-color:#1BBC9B;
+			color: black;
+			box-shadow:0px 0px 3px black;
+		}*/
+		.quotes{
+			margin-top:20px;
+			margin-bottom: 20px;
+			padding: 20px;
+			font-size:20px;
+			color: #E4F1FE;
+			width: 102.5%;
+			box-shadow: 0 0 40px black;
+		}
+		.quotes h2{
+			font-family: 'Source Code Pro', monospace;
+			text-decoration: underline;
+		}
+		.myrow{ height: 100vh;
+			font-size: 20px;
+			background-color: #68C3A3;
+			box-shadow: 0 0 40px black;
+		}
+		.aboutimg{
+			margin-top:90px;
+			height:250px;
+			width: 250px;
+			border-radius:125px;
+			box-shadow:0px 0px 20px gray;
+		}
+		.myrow2{
+			background-color: #68C3A3;
+			font-family: 'Source Code Pro', monospace;
+			box-shadow: 0 0 40px black;
+		}
+		.myrow2 .btn{color: black;
+			background: #11998e;
+			background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+			background: linear-gradient(to right, #38ef7d, #11998e);
+        }
+        .myrow2 .btn:hover{
+        	background: #11998e;
+			background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+			background: linear-gradient(to left, #38ef7d, #11998e);
+        }
+        footer span:hover{
+        	color: #336E7B;
+        }
+        .myrow2 .card{
+        	box-shadow: 4px 4px 4px gray;
+        }
+        .myrow3{
+        	height: 50px;
+			background-color: #68C3A3;
+			box-shadow: 0 0 40px black;
+		}
+        .navbar .navbar-toggler-icon { 
+    		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#1BBC9B' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+		}
+		
+		.btn-outline-primary:hover{
+			background: #1BBC9B;
+			border-color:#1BBC9B;
+			color: white; 
+		}
+
+		
+/*------------------------Loader-------------------------------------------------*/
+#overlay{
+    height: 100%;
+    width: 100%;
+	background:gray;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
+}
+.loader {
+    border: 5px solid purple; /* Light grey */
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}		
