@@ -15,11 +15,18 @@ body{
         body { padding-top: 60px; }
     }   
 /*--------------------------------------------------------------------------------------*/
+		.navbar{
+			padding: 0px;
+			height: 60px;
+		}
 		.navbar-brand{
-			font-size: 25px;
+			padding: 0px;
+			font-size: 26px;
 			font-family: 'Source Code Pro', monospace;
 		}
 		.nav-link{
+			line-height: 60px;
+			padding: 0px;
 			color: #1BBC9B;
 			font-family: 'Source Code Pro', monospace;
 		}
@@ -27,6 +34,7 @@ body{
 			color:white;
 			background:1em;
 			background-color:#1BBC9B;  
+			transition: 1.2s;
 		}
 		.jumbotron{
 			/*background: url(../images/jumbotronbg.jpg) center center;
